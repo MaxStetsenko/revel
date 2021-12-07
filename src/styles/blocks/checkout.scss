@@ -1,7 +1,7 @@
 .checkout {
   &__body {
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: minmax(400px, 585px) minmax(420px, 1fr);
     column-gap: 68px;
 
     @include lg-block{
@@ -33,7 +33,6 @@
 
   &__widget {
     margin-bottom: 30px;
-    background-color: rgba(18, 18, 30, 0.25);;
   }
 
   &__result {
@@ -86,6 +85,10 @@
     flex-basis: 128px;
     text-align: right;
     padding-left: 10px;
+
+    @include xxl-block{
+      font-size: 22px;
+    }
   }
 }
 
@@ -117,6 +120,11 @@
       &:hover{
         color: var(--green);
       }
+    }
+
+    @include xxl-block{
+      height: 60px;
+      font-size: 22px;
     }
 
     @include md-block{

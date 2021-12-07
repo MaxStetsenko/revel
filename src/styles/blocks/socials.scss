@@ -28,4 +28,13 @@
       }
     }
   }
+
+  &__icon {
+    height: 20px;
+    width: 18px;
+
+    &--facebook {
+      width: 20px;
+    }
+  }
 }

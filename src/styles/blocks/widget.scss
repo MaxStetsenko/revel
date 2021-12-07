@@ -1,0 +1,28 @@
+.widget {
+  text-align: center;
+  padding: 0 30px;
+
+  &--checkout {
+    margin-bottom: 30px;
+    background-color: rgba(18, 18, 30, 0.25);
+    padding: 70px 32px 40px 32px;
+    .widget__inner {
+      max-width: 540px;
+    }
+  }
+
+  // &__model {
+
+  // }
+
+  &__inner {
+    max-width: 750px;
+    width: 100%;
+
+    margin: 0 auto;
+
+    @include lg-block{
+      max-width: 600px;
+    }
+  }
+}

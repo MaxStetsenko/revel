@@ -21,11 +21,11 @@
     max-width: 528px;
     width: 100%;
 
+    @include xxl-block{
+      font-size: 18px;
+    }
     @include lg-block{
       max-width: none;
-    }
-    @include md-block{
-      font-size: 18px;
     }
   }
 

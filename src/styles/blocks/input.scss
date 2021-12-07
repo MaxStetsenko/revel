@@ -12,6 +12,10 @@
     opacity: 0.5;
   }
 
+  @include xxl-block{
+    height: 44px;
+  }
+
   &--select {
     cursor: pointer;
     text-overflow: ellipsis;

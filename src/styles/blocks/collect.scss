@@ -3,11 +3,11 @@
     margin-bottom: 10px;
   }
 
-  &__subtitle {
-  }
+  // &__subtitle {
+  // }
 
-  &__form {
-  }
+  // &__form {
+  // }
 }
 
 .collect-form {
@@ -48,9 +48,11 @@
       opacity: 0.35;
     }
 
-    @include lg-block {
+    @include xxl-block{
+      height: 60px;
       font-size: 22px;
     }
+
     @include md-block {
       font-size: 18px;
     }
@@ -256,6 +258,10 @@
 
     background-image: linear-gradient(to top, #212032 0%, #3a3855 100%);
 
+    @include xxl-block{
+      height: 166px;
+    }
+
     @include lg-block{
       padding: 20px;
     }
@@ -273,7 +279,7 @@
     font-weight: 700;
     color: var(--green);
 
-    @include md-block{
+    @include xxl-block{
       font-size: 18px;
     }
   }
@@ -281,10 +287,10 @@
     font-size: 34px;
     font-weight: 400;
 
-
-    @include lg-block{
+    @include xxl-block{
       font-size: 28px;
     }
+
     @include md-block{
       font-size: 24px;
     }

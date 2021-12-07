@@ -1,6 +1,7 @@
 $columns: 12;
 $atom: (100% / $columns);
 
+$break_xxl: 90rem;
 $break_xl: 75rem;
 $break_lg: 62rem;
 $break_md: 48rem;
@@ -8,6 +9,7 @@ $break_sm: 36rem;
 $break_xs: 20rem;
 
 $offset: 1.875rem;
+$offset_xxl: $offset;
 $offset_xl: $offset;
 $offset_lg: $offset;
 $offset_md: $offset;
@@ -15,6 +17,7 @@ $offset_sm: $offset;
 $offset_xs: $offset;
 
 $offset_one_side: ($offset / 2);
+$offset_xxl_one_side: ($offset_xxl / 2);
 $offset_xl_one_side: ($offset_xl / 2);
 $offset_lg_one_side: ($offset_lg / 2);
 $offset_md_one_side: ($offset_md / 2);
@@ -84,6 +87,11 @@ $fields: 0.9375rem;
     width: #{calc(#{$val} - #{$offset})};
 }
 
+@mixin size-xxl($n){
+    $val: 100% / $columns * $n;
+    @include xxl(width, #{calc(#{$val} - #{$offset_xxl})});
+}
+
 @mixin size-xl($n){
     $val: 100% / $columns * $n;
     @include xl(width, #{calc(#{$val} - #{$offset_xl})});
@@ -139,6 +147,38 @@ $fields: 0.9375rem;
 @mixin shift-padding-right($n){
     $val: 100% / $columns * $n;
     padding-right: #{calc(#{$val} + #{$offset_one_side})};
+}
+
+@mixin shift-xxl($n){
+    $val: 100% / $columns * $n;
+    @include xxl(margin-left, #{calc(#{$val} + #{$offset_xxl_one_side})});
+    @include xxl(margin-right, #{calc(#{$val} + #{$offset_xxl_one_side})});
+}
+
+@mixin shift-xxl-left($n){
+    $val: 100% / $columns * $n;
+    @include xxl(margin-left, #{calc(#{$val} + #{$offset_xxl_one_side})});
+}
+
+@mixin shift-xxl-right($n){
+    $val: 100% / $columns * $n;
+    @include xxl(margin-right, #{calc(#{$val} + #{$offset_xxl_one_side})});
+}
+
+@mixin shift-xxl-padding($n){
+    $val: 100% / $columns * $n;
+    @include xxl(padding-left, #{calc(#{$val} + #{$offset_xxl_one_side})});
+    @include xxl(padding-right, #{calc(#{$val} + #{$offset_xxl_one_side})});
+}
+
+@mixin shift-xxl-padding-left($n){
+    $val: 100% / $columns * $n;
+    @include xxl(padding-left, #{calc(#{$val} + #{$offset_xxl_one_side})});
+}
+
+@mixin shift-xxl-padding-right($n){
+    $val: 100% / $columns * $n;
+    @include xxl(padding-right, #{calc(#{$val} + #{$offset_xxl_one_side})});
 }
 
 @mixin shift-xl($n){
@@ -299,6 +339,18 @@ $fields: 0.9375rem;
 @mixin shift-xs-padding-right($n){
     $val: 100% / $columns * $n;
     @include xs(padding-right, #{calc(#{$val} + #{$offset_xs_one_side})});
+}
+
+@mixin xxl($name, $value){
+    @media screen and (max-width: $break_xxl){
+        #{$name}: $value;
+    }
+}
+
+@mixin xxl-block(){
+    @media screen and (max-width: $break_xxl){
+        @content;
+    }
 }
 
 @mixin xl($name, $value){

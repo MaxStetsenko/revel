@@ -111,6 +111,11 @@
 
     font-size: 28px;
     font-weight: 700;
+    text-transform: uppercase;
+
+    @include xxl-block{
+      font-size: 26px
+    }
   }
 
   &__social-list {

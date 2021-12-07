@@ -41,7 +41,7 @@
             <ul class="banner__socials socials socials--banner">
               <li class="socials__item">
                 <a href="" target="_blank" class="socials__link">
-                  <svg class='social__icon' width="12" height="20">
+                  <svg class='socials__icon socials__icon--facebook'>
                     <use xlink:href='img/socials/socials-sprite.svg#facebook'></use>
                   </svg>
                 </a>
@@ -49,7 +49,7 @@
   
               <li class="socials__item">
                 <a href="" target="_blank" class="socials__link">
-                  <svg class='social__icon' width="16" height="12">
+                  <svg class='socials__icon'>
                     <use xlink:href='img/socials/socials-sprite.svg#youtube'></use>
                   </svg>
                 </a>
@@ -57,7 +57,7 @@
   
               <li class="socials__item">
                 <a href="" target="_blank" class="socials__link">
-                  <svg class='socials__icon' width="16" height="13">
+                  <svg class='socials__icon'>
                     <use xlink:href='img/socials/socials-sprite.svg#twitter'></use>
                   </svg>
                 </a>
@@ -65,7 +65,7 @@
   
               <li class="socials__item">
                 <a href="" target="_blank" class="socials__link">
-                  <svg class='socials__icon' width="15" height="15">
+                  <svg class='socials__icon'>
                     <use xlink:href='img/socials/socials-sprite.svg#instagram'></use>
                   </svg>
                 </a>
@@ -80,8 +80,13 @@
             <div class="banner__warranty">
               <img class="banner__warranty-image" src="img/warranty.svg" alt="" />
             </div>
-            <div class="widget" style="text-align: center;">
-              <img src="img/widget.png" alt="" style="max-width: 80vh; width: 100%;" />
+            <div class="widget">
+              <div class="widget__inner">
+                <img src="img/flame_model.png" alt="flame model" class="widget__model">
+                <div class="widget__controller">
+                  <img src="img/view_сontroller.png" alt="" />
+                </div>
+              </div>
             </div>
           </div>
         </div>
@@ -167,7 +172,7 @@
               </label>
               <div class="signature__form">
                 <input type="text" name="Подпись name" placeholder="Введите подпись" class="input" autocomplete="off">
-                <button type="button" class="btn btn--blue">Применить</button>
+                <button type="button" class="btn btn--blue"><span>Применить</span></button>
               </div>
             </div>
             <div class="collect-form__result result-form">

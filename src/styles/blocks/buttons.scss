@@ -4,6 +4,7 @@
   display: inline-flex;
   justify-content: center;
   align-items: center;
+  position: relative;
 
   color: #fff;
   font-weight: 700;
@@ -16,22 +17,62 @@
   box-shadow: 0 0 6px 3px rgba(0, 87, 43, 0.04);
   border: transparent;
 
+  span {
+    position: relative;
+  }
+
+  @include xxl-block{
+    height: 44px;
+  }
+
+  &--green,
+  &--blue {
+    &:before{
+      content:'';
+      position: absolute;
+      pointer-events: none;
+      left: 50%;
+      bottom: 50%;
+      transform: translate(-50%, 50%);
+    }
+  }
+
   &--green {
     background-color: var(--green);
+
+    &:before{
+      background-image: url("../img/btn-green-light.png");
+      width: 269px;
+      height: 90px;
+    }
 
     @media (any-hover: hover) {
       &:hover{
         background-color: var(--green-h);
+
+        &:before{
+          opacity: 0;
+        }
       }
     }
   }
 
   &--blue {
     background-color: var(--blue);
+
+    &:before{
+      background-image: url("../img/btn-blue-light.png");
+      width: 269px;
+      height: 112px;
+    }
     
     @media (any-hover: hover) {
       &:hover{
         background-color: var(--blue-h);
+
+        &:before{
+          opacity: 0;
+        }
       }
     }
   }

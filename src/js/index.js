@@ -19,15 +19,14 @@ burger.addEventListener('click', function () {
 const menuLinks = document.querySelectorAll('.menu__link');
 
 for (const link of menuLinks) {
-  if (page.classList.contains('active')) {
-    link.addEventListener('click', function (e) {
+  link.addEventListener('click', function (e) {
+    if (page.classList.contains('active')) {
       toggleClass(headerMenu, burger, page);
-    })
-  }
+    }
+  })
 }
 
 // Slider
-// import Swiper, { Autoplay } from 'swiper';
 import SwiperCore, { Navigation, Autoplay } from 'swiper/core';
 
 // configure Swiper to use modules

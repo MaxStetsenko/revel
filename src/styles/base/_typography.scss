@@ -7,6 +7,10 @@
     color: var(--green);
   }
 
+  @include xxl-block{
+    font-size: 42px;
+  }
+
   @include md-block{
     font-size: 36px;
   }
@@ -17,6 +21,10 @@
 
   &--md {
     font-size: 30px;
+
+    @include xxl-block{
+      font-size: 26px;
+    }
 
     @include md-block{
       font-size: 22px;

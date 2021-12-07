@@ -61,7 +61,6 @@
         "imagemin-pngquant": "^9.0.0",
         "imagemin-webp": "^6.0.0",
         "imagemin-zopfli": "^7.0.0",
-        "lint-staged": "^10.0.3",
         "require-dir": "^1.2.0",
         "stylelint": "^13.6.1",
         "stylelint-order": "^4.1.0",
@@ -71,20 +70,6 @@
         "yargs": "^15.4.1"
     },
     "dependencies": {
-        "smart-grid": "^2.1.2",
-        "swiper": "^6.8.0"
-    },
-    "husky": {
-        "hooks": {
-            "pre-commit": "lint-staged"
-        }
-    },
-    "lint-staged": {
-        "!(_*).scss": [
-            "stylelint --fix --color --config ./.stylelintrc"
-        ],
-        "*.js": [
-            "eslint --fix --color"
-        ]
+        "smart-grid": "^2.1.2"
     }
 }
