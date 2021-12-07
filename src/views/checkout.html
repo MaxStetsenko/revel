@@ -1,0 +1,307 @@
+<!DOCTYPE html>
+<html lang="ru" class="page">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Оформление заказа</title>
+    <meta name="theme-color" content="#fff">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+    <meta name="viewport"
+      content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <link rel="shortcut icon" href="img/favicons/favicon.ico" type="image/x-icon">
+    <link rel="icon" sizes="16x16" href="img/favicons/favicon-16x16.png" type="image/png">
+    <link rel="icon" sizes="32x32" href="img/favicons/favicon-32x32.png" type="image/png">
+    <link rel="apple-touch-icon-precomposed" href="img/favicons/apple-touch-icon-precomposed.png">
+    <link rel="apple-touch-icon" href="img/favicons/apple-touch-icon.png">
+    <link rel="apple-touch-icon" sizes="57x57" href="img/favicons/apple-touch-icon-57x57.png">
+    <link rel="apple-touch-icon" sizes="60x60" href="img/favicons/apple-touch-icon-60x60.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="img/favicons/apple-touch-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="76x76" href="img/favicons/apple-touch-icon-76x76.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="img/favicons/apple-touch-icon-114x114.png">
+    <link rel="apple-touch-icon" sizes="120x120" href="img/favicons/apple-touch-icon-120x120.png">
+    <link rel="apple-touch-icon" sizes="144x144" href="img/favicons/apple-touch-icon-144x144.png">
+    <link rel="apple-touch-icon" sizes="152x152" href="img/favicons/apple-touch-icon-152x152.png">
+    <link rel="apple-touch-icon" sizes="167x167" href="img/favicons/apple-touch-icon-167x167.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="img/favicons/apple-touch-icon-180x180.png">
+    <link rel="apple-touch-icon" sizes="1024x1024" href="img/favicons/apple-touch-icon-1024x1024.png">
+    <link rel="stylesheet" href="styles/main.css">
+  </head>
+  <body class="page__body">
+    <!-- header -->
+    @@include("../blocks/modules/header/header.html", {
+    "link-view": "/#view",
+    "link-about": "/#about"
+    })
+    <!-- main -->
+    <div class="main">
+      <!-- checkout -->
+      <div class="main__checkout checkout">
+        <div class="container">
+          <div class="checkout__body">
+            <!-- left -->
+            <div class="checkout__left checkout-left">
+              <div class="checkout__breadcrumb breadcrumb">
+                <a href="#" class="breadcrumb__item">
+                  <svg class='breadcrumb__item-icon'>
+                    <use xlink:href='img/RevelFlame-SVG-sprite.svg#right-arrow'></use>
+                  </svg>
+                  <span>На главную</span>
+                </a>
+              </div>
+
+              <h2 class="checkout-left__title title">Ваш заказ</h2>
+
+              <div class="checkout-left__widget" style="height: 200px;"></div>
+
+              <div class="checkout-left__result checkout-result">
+                <h3 class="checkout-result__title title-bold"><span>REVEL FLAME</span></h3>
+                <div class="checkout-result__body">
+                  <div class="checkout-result__block">
+                    <div class="checkout-result__row">
+                      <div class="checkout-result__label">Материал:</div>
+                      <div class="checkout-result__line"></div>
+                      <div class="checkout-result__label-result">Cofet</div>
+                    </div>
+
+                    <div class="checkout-result__row">
+                      <div class="checkout-result__label">Технология:</div>
+                      <div class="checkout-result__line"></div>
+                      <div class="checkout-result__label-result">FDM</div>
+                    </div>
+
+                    <div class="checkout-result__row">
+                      <div class="checkout-result__label">Производство:</div>
+                      <div class="checkout-result__line"></div>
+                      <div class="checkout-result__label-result">Печать</div>
+                    </div>
+
+                    <div class="checkout-result__row">
+                      <div class="checkout-result__label">Вес:</div>
+                      <div class="checkout-result__line"></div>
+                      <div class="checkout-result__label-result">2 кг.</div>
+                    </div>
+
+                    <div class="checkout-result__row">
+                      <div class="checkout-result__label">Цвет:</div>
+                      <div class="checkout-result__line"></div>
+                      <div class="checkout-result__label-result">Steel</div>
+                    </div>
+
+                    <div class="checkout-result__row">
+                      <div class="checkout-result__label">Количество:</div>
+                      <div class="checkout-result__line"></div>
+                      <div class="checkout-result__label-result">
+                        <div class="counter">
+                          <div class="counter__button counter__button--plus">
+                          </div>
+                          <div class="counter__num">0</div>
+                          <div class="counter__button counter__button--minus">
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="checkout-result__block">
+                    <div class="checkout-result__row">
+                      <div class="checkout-result__label">Товар:</div>
+                      <div class="checkout-result__line"></div>
+                      <div class="checkout-result__label-result">1,234.00$</div>
+                    </div>
+
+                    <div class="checkout-result__row">
+                      <div class="checkout-result__label">Доставка:</div>
+                      <div class="checkout-result__line"></div>
+                      <div class="checkout-result__label-result">0.00$</div>
+                    </div>
+                  </div>
+
+                  <div class="checkout-result__block">
+                    <div class="checkout-result__row">
+                      <div class="checkout-result__label">Итого:</div>
+                      <div class="checkout-result__line"></div>
+                      <div class="checkout-result__label-result">1,234.00$</div>
+                    </div>
+                  </div>
+
+                </div>
+              </div>
+
+              <div class="checkout-left__parameters checkout-parameters">
+                <h3 class="checkout-parameters__title title title--md">Дополнительные параметры</h3>
+
+                <div class="checkout-parameters__list">
+                  <a href="#" class="checkout-parameters__link">
+                    Инструкция использования
+                    <svg class='checkout-parameters__icon icon icon--download'>
+                      <use xlink:href='img/RevelFlame-SVG-sprite.svg#download'></use>
+                    </svg>
+                  </a>
+
+                  <a href="#" class="checkout-parameters__link">
+                    Техника безопасности
+                    <svg class='checkout-parameters__icon icon icon--download'>
+                      <use xlink:href='img/RevelFlame-SVG-sprite.svg#download'></use>
+                    </svg>
+                  </a>
+                </div>
+              </div>
+
+            </div>
+            <!-- right -->
+            <form action="" method="post" class="checkout__right checkout-form">
+              <div class="checkout-form__blocks">
+                <div class="checkout-form__block">
+                  <div class="checkout-form__header">
+                    <div class="checkout-form__title">Покупатель</div>
+                    <div class="checkout-form__line"></div>
+                  </div>
+
+                  <div class="checkout-form__block-body">
+                    <div class="checkout-form__row">
+                      <div class="checkout-form__label">ФИО Покупателя</div>
+                      <input type="text" name="ФИО Покупателя" placeholder="Роман Романович" class="input" required>
+                    </div>
+                    <div class="checkout-form__row">
+                      <div class="checkout-form__label">ФИО Покупателя</div>
+                      <input type="tel" name="Телефон" placeholder="+38 (042) 425-52-55" class="input" required>
+                    </div>
+                    <div class="checkout-form__row">
+                      <div class="checkout-form__label">Почта</div>
+                      <input type="text" name="Почта" placeholder="somebody@gmail.com" class="input">
+                    </div>
+                  </div>
+                </div>
+
+                <div class="checkout-form__block">
+                  <div class="checkout-form__header">
+                    <div class="checkout-form__title">Доставка</div>
+                    <div class="checkout-form__line"></div>
+                  </div>
+
+                  <div class="checkout-form__block-body">
+                    <div class="checkout-form__row">
+                      <div class="checkout-form__label">Страна</div>
+                      <div class="select">
+                        <input type="text" name="Страна" value="Украина" class="input input--select" readonly>
+                        <div class="select__button">
+                          <svg class='icon icon--select'>
+                            <use xlink:href='img/RevelFlame-SVG-sprite.svg#right-arrow'></use>
+                          </svg>
+                        </div>
+                        <div class="select__body">
+                          <div class="select__item">Австрия</div>
+                          <div class="select__item select__item--active">Украина</div>
+                          <div class="select__item">Боливия</div>
+                          <div class="select__item">Австрия</div>
+                          <div class="select__item">Боливия</div>
+                          <div class="select__item">Австрия</div>
+                          <div class="select__item">Боливия</div>
+                        </div>
+                      </div>
+                    </div>
+
+                    <div class="checkout-form__row">
+                      <div class="checkout-form__label">Способ доставки</div>
+                      <div class="select">
+                        <input type="text" name="Способ Доставки" value="Новая почта" class="input input--select"
+                          readonly>
+                        <div class="select__button">
+                          <svg class='icon icon--select'>
+                            <use xlink:href='img/RevelFlame-SVG-sprite.svg#right-arrow'></use>
+                          </svg>
+                        </div>
+                        <div class="select__body">
+                          <div class="select__item select__item--active">Новая почта</div>
+                          <div class="select__item">Укрпочта</div>
+                        </div>
+                      </div>
+                    </div>
+
+                    <div class="checkout-form__row">
+                      <div class="checkout-form__label">Город</div>
+                      <input type="text" name="Город" placeholder="Киев" class="input" required>
+                    </div>
+
+                    <div class="checkout-form__row">
+                      <div class="checkout-form__label">Отделение</div>
+                      <div class="select">
+                        <input type="text" name="Отделение" value="Отделение №101 (ул. Пс Отделение №101 (ул.
+                        Пс..." class="input input--select" readonly>
+                        <div class="select__button">
+                          <svg class='icon icon--select'>
+                            <use xlink:href='img/RevelFlame-SVG-sprite.svg#right-arrow'></use>
+                          </svg>
+                        </div>
+                        <div class="select__body">
+                          <div class="select__item select__item--active">Отделение №101 (ул. Пс Отделение №101 dfffd
+                          </div>
+                          <div class="select__item">Укрпочта</div>
+                        </div>
+                      </div>
+                    </div>
+
+                  </div>
+                </div>
+
+                <div class="checkout-form__block">
+                  <div class="checkout-form__header">
+                    <div class="checkout-form__title">Оплата</div>
+                    <div class="checkout-form__line"></div>
+                  </div>
+
+                  <div class="checkout-form__block-body">
+                    <div class="checkout-form__row">
+                      <div class="checkout-form__label">Способ оплаты</div>
+                      <div class="select">
+                        <input type="text" name="Способ оплаты" value="Visa/MasterCard" class="input input--select"
+                          readonly>
+                        <div class="select__button">
+                          <svg class='icon icon--select'>
+                            <use xlink:href='img/RevelFlame-SVG-sprite.svg#right-arrow'></use>
+                          </svg>
+                        </div>
+                        <div class="select__body">
+                          <div class="select__item">Mono</div>
+                          <div class="select__item select__item--active">Visa/Mastercard</div>
+                        </div>
+                      </div>
+                    </div>
+
+                    <div class="checkout-form__row">
+                      <div class="checkout-form__label">Номер карты</div>
+                      <input type="text" name="Номер карты" placeholder="4149 2355 2423 5525" class="input" required>
+                    </div>
+
+                    <div class="checkout-form__row checkout-form__row--grid">
+                      <div class="checkout-form__row-col">
+                        <div class="checkout-form__row">
+                          <div class="checkout-form__label">Дата</div>
+                          <input type="text" name="Дата" placeholder="12/36" class="input input--text-center" required>
+                        </div>
+                      </div>
+
+                      <div class="checkout-form__row-col">
+                        <div class="checkout-form__row">
+                          <div class="checkout-form__label">CVV</div>
+                          <input type="tel" name="CVV" placeholder="136" class="input input--text-center" required>
+                        </div>
+                      </div>
+                    </div>
+
+                  </div>
+                </div>
+              </div>
+              <button type="submit" class="checkout-form__submit btn btn--dark-green">Оформить заказ</button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- footer -->
+    @@include("../blocks/modules/footer/footer.html")
+    <script src="js/main.js"></script>
+    <script src="js/vendor.js"></script>
+  </body>
+</html>

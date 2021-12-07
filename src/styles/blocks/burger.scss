@@ -1,0 +1,42 @@
+.burger {
+  cursor: pointer;
+  display: none;
+
+  @include lg-block{
+    display: block
+  }
+
+	.burger__bar {
+		width: 28px;
+		height: 2px;
+		margin: 4px auto;
+		transition: 0.3s ease-in-out;
+		background-color: var(--light);
+		display: block;
+	}
+
+	.burger__bar:nth-child(2) {
+		width: 22px;
+		margin-right: 0;
+	}
+
+  @media (any-hover: hover) {
+    &:hover{
+      .burger__bar:nth-child(2) {
+        width: 28px;
+      }
+    }
+  }
+
+	&.active {
+		.burger__bar:nth-child(1) {
+			transform: translateY(6px) rotate(45deg);
+		}
+		.burger__bar:nth-child(2) {
+			opacity: 0;
+		}
+		.burger__bar:nth-child(3) {
+			transform: translateY(-6px) rotate(-45deg);
+		}
+	}
+}

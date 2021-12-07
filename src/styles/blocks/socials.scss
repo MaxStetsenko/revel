@@ -1,0 +1,31 @@
+.socials {
+  display: grid;
+  gap: 24px;
+  align-items: center;
+
+  list-style-type: none;
+
+  &--page-thanks {
+    grid-template-columns: repeat(auto-fit, minmax(12px, 20px));
+  }
+
+  // &__banner {}
+
+  &__item {
+    text-align: center;
+  }
+
+  &__link {
+    fill: #fff;
+    display: block;
+    opacity: 0.5;
+    transition: fill .3s, opacity .3s;
+
+    @media (any-hover: hover) {
+      &:hover{
+        fill: var(--green);
+        opacity: 1;
+      }
+    }
+  }
+}

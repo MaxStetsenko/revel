@@ -1,0 +1,12 @@
+.logo {
+  display: inline-block;
+  // .logo__images
+  &__images {
+    max-width: 294px;
+    width: 100%;
+
+    @include lg-block{
+      max-width: 200px;
+    }
+  }
+}

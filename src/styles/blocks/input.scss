@@ -1,0 +1,24 @@
+.input {
+  height: 48px;
+  padding: 0 20px;
+  font-size: 18px;
+  font-weight: 400;
+  color: #232224;
+  border-color: transparent;
+  width: 100%;
+
+  &::placeholder {
+    font-family: 'Gilroy';
+    opacity: 0.5;
+  }
+
+  &--select {
+    cursor: pointer;
+    text-overflow: ellipsis;
+    padding-right: 100px;
+  }
+
+  &--text-center {
+    text-align: center;
+  }
+}

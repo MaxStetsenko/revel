@@ -1,0 +1,58 @@
+.btn {
+  $min-width: 196px;
+
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+
+  color: #fff;
+  font-weight: 700;
+  text-transform: uppercase;
+
+  height: 48px;
+  min-width: $min-width;
+  transition: all .3s;
+
+  box-shadow: 0 0 6px 3px rgba(0, 87, 43, 0.04);
+  border: transparent;
+
+  &--green {
+    background-color: var(--green);
+
+    @media (any-hover: hover) {
+      &:hover{
+        background-color: var(--green-h);
+      }
+    }
+  }
+
+  &--blue {
+    background-color: var(--blue);
+    
+    @media (any-hover: hover) {
+      &:hover{
+        background-color: var(--blue-h);
+      }
+    }
+  }
+
+  &--dark-green {
+    background-color: #007b3d;
+
+    @media (any-hover: hover) {
+      &:hover{
+        background-color: #167144;
+      }
+    }
+  }
+
+  @media (any-hover: hover) {
+    &:hover{
+      cursor: pointer;
+    }
+  }
+
+  &__icon {
+    margin-right: 8px;
+  }
+}

@@ -1,0 +1,15 @@
+// ----------- Breadcrumb
+.breadcrumb {
+  &__item {
+    display: flex;
+    align-items: center;
+    color: var(--green);
+  }
+  &__item-icon {
+    margin-right: 4px;
+    transform: rotate(180deg);
+    width: 8px;
+    height: 13px;
+    fill: var(--green);
+  }
+}

@@ -1,0 +1,65 @@
+.about {
+  &__body {
+  }
+
+  &__info {
+    @include size(6);
+
+    @include lg-block{
+      @include size(12);
+      margin-bottom: 30px;
+    }
+  }
+
+  &__info-title {
+    margin-bottom: 22px;
+  }
+
+  &__info-text {
+    font-size: 20px;
+    font-weight: 400;
+    max-width: 528px;
+    width: 100%;
+
+    @include lg-block{
+      max-width: none;
+    }
+    @include md-block{
+      font-size: 18px;
+    }
+  }
+
+  &__video {
+    @include size(6);
+
+    @include lg-block{
+      @include size(12);
+    }
+  }
+}
+
+.about-video {
+  position: relative;
+
+  @include lg-block{
+    text-align: center;
+  }
+
+  &__link,
+  &__image {
+    border-radius: 30px;
+  }
+
+  &__icon {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+  }
+
+  &__link {
+    display: inline-block;
+    position: relative;
+  }
+}

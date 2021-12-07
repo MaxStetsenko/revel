@@ -1,0 +1,29 @@
+:root {
+  --light: #f9f9fa;
+  --green: #01d66a;
+  --main-bg: #212031;
+  --footer-bg: #15141f;
+  --gray: #bababa;
+
+  --transparent-green: rgba(1, 214, 106, 0.38);
+
+  --border-color:#393753;
+  --blue: #463fad;
+
+  --green-h: #08b05b;
+  --blue-h: #342e85;
+  
+  --dark-text: #817eab;
+
+  --blue-dark: #3a3855;
+  --blue-dark-h: #605d88;
+
+  --header-height: 50px;
+  --header-padding-top: 36px;
+
+  @media screen and (max-width: 992px) {
+    --header-padding-top: 30px;
+  }
+}
+
+$colorRadioSize: 130px;

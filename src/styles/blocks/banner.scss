@@ -1,0 +1,70 @@
+.banner {
+  background-image: url("../../img/banner-text-shadow-bg.png");
+  background-repeat: no-repeat;
+  background-position: center center;
+
+  &__body {
+    border-bottom: 2px solid var(--footer-bg);
+    position: relative;
+
+    height: calc(100vh - var(--header-height) - var(--header-padding-top) - 10px);
+    
+    @include from(rem(768)){
+      min-height: 600px;
+    }
+
+    @include md-block{
+      height: 100%;
+      min-height: 75vh;
+    }
+  }
+
+  &__socials {
+    position: absolute;
+    bottom: 28px;
+  }
+
+  // banner__info
+  &__info {
+    position: absolute;
+    bottom: 28px;
+    right: 0;
+  }
+
+  &__info-label {
+    font-size: 24px;
+    color: #fff;
+    opacity: 0.5;
+    transform: rotate(-90deg);
+    width: 24px;
+    height: 27px;
+    white-space: nowrap;
+    margin-bottom: 10px;
+  }
+
+  &__info-line {
+    width: 2px;
+    height: 120px;
+    background-color: #ffffff;
+    opacity: 0.5;
+    margin: 0 auto;
+  }
+
+  &__warranty {
+    position: absolute;
+    right: 0;
+    top: 54px;
+
+    @include lg-block{
+      top: 10px;
+    }
+  }
+  &__warranty-image {
+    max-width: 187px;
+    width: 100%;
+
+    @include lg-block{
+      max-width: 100px;
+    }
+  }
+}

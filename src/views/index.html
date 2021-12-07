@@ -1,34 +1,306 @@
 <!DOCTYPE html>
-<html lang="ru">
-    <head>
-        <meta charset="utf-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <title>gulp-scss-starter</title>
-        <meta name="theme-color" content="#fff">
-        <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
-        <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
-        <link rel="shortcut icon" href="img/favicons/favicon.ico" type="image/x-icon">
-        <link rel="icon" sizes="16x16" href="img/favicons/favicon-16x16.png" type="image/png">
-        <link rel="icon" sizes="32x32" href="img/favicons/favicon-32x32.png" type="image/png">
-        <link rel="apple-touch-icon-precomposed" href="img/favicons/apple-touch-icon-precomposed.png">
-        <link rel="apple-touch-icon" href="img/favicons/apple-touch-icon.png">
-        <link rel="apple-touch-icon" sizes="57x57" href="img/favicons/apple-touch-icon-57x57.png">
-        <link rel="apple-touch-icon" sizes="60x60" href="img/favicons/apple-touch-icon-60x60.png">
-        <link rel="apple-touch-icon" sizes="72x72" href="img/favicons/apple-touch-icon-72x72.png">
-        <link rel="apple-touch-icon" sizes="76x76" href="img/favicons/apple-touch-icon-76x76.png">
-        <link rel="apple-touch-icon" sizes="114x114" href="img/favicons/apple-touch-icon-114x114.png">
-        <link rel="apple-touch-icon" sizes="120x120" href="img/favicons/apple-touch-icon-120x120.png">
-        <link rel="apple-touch-icon" sizes="144x144" href="img/favicons/apple-touch-icon-144x144.png">
-        <link rel="apple-touch-icon" sizes="152x152" href="img/favicons/apple-touch-icon-152x152.png">
-        <link rel="apple-touch-icon" sizes="167x167" href="img/favicons/apple-touch-icon-167x167.png">
-        <link rel="apple-touch-icon" sizes="180x180" href="img/favicons/apple-touch-icon-180x180.png">
-        <link rel="apple-touch-icon" sizes="1024x1024" href="img/favicons/apple-touch-icon-1024x1024.png">
-        <link rel="stylesheet" href="styles/main.css">
+<html lang="ru" class="page">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Revel Flame</title>
+    <meta name="theme-color" content="#fff">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+    <meta name="viewport"
+      content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <link rel="shortcut icon" href="img/favicons/favicon.ico" type="image/x-icon">
+    <link rel="icon" sizes="16x16" href="img/favicons/favicon-16x16.png" type="image/png">
+    <link rel="icon" sizes="32x32" href="img/favicons/favicon-32x32.png" type="image/png">
+    <link rel="apple-touch-icon-precomposed" href="img/favicons/apple-touch-icon-precomposed.png">
+    <link rel="apple-touch-icon" href="img/favicons/apple-touch-icon.png">
+    <link rel="apple-touch-icon" sizes="57x57" href="img/favicons/apple-touch-icon-57x57.png">
+    <link rel="apple-touch-icon" sizes="60x60" href="img/favicons/apple-touch-icon-60x60.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="img/favicons/apple-touch-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="76x76" href="img/favicons/apple-touch-icon-76x76.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="img/favicons/apple-touch-icon-114x114.png">
+    <link rel="apple-touch-icon" sizes="120x120" href="img/favicons/apple-touch-icon-120x120.png">
+    <link rel="apple-touch-icon" sizes="144x144" href="img/favicons/apple-touch-icon-144x144.png">
+    <link rel="apple-touch-icon" sizes="152x152" href="img/favicons/apple-touch-icon-152x152.png">
+    <link rel="apple-touch-icon" sizes="167x167" href="img/favicons/apple-touch-icon-167x167.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="img/favicons/apple-touch-icon-180x180.png">
+    <link rel="apple-touch-icon" sizes="1024x1024" href="img/favicons/apple-touch-icon-1024x1024.png">
+    <link rel="stylesheet" href="styles/main.css">
     </head>
-    <body>
-        @@include("../blocks/modules/header/header.html")
-        @@include("../blocks/modules/footer/footer.html")
-        <script src="js/main.js"></script>
-        <script src="js/vendor.js"></script>
+  <body class="page__body">
+    <!-- header -->
+    @@include("../blocks/modules/header/header.html", {
+    "link-view": "#view",
+    "link-about": "#about"
+    })
+    <!-- main -->
+    <div class="main">
+      <!-- banner -->
+      <div id="view" class="main__banner banner">
+        <div class="container">
+          <div class="banner__body">
+            <ul class="banner__socials socials socials--banner">
+              <li class="socials__item">
+                <a href="" target="_blank" class="socials__link">
+                  <svg class='social__icon' width="12" height="20">
+                    <use xlink:href='img/socials/socials-sprite.svg#facebook'></use>
+                  </svg>
+                </a>
+              </li>
+  
+              <li class="socials__item">
+                <a href="" target="_blank" class="socials__link">
+                  <svg class='social__icon' width="16" height="12">
+                    <use xlink:href='img/socials/socials-sprite.svg#youtube'></use>
+                  </svg>
+                </a>
+              </li>
+  
+              <li class="socials__item">
+                <a href="" target="_blank" class="socials__link">
+                  <svg class='socials__icon' width="16" height="13">
+                    <use xlink:href='img/socials/socials-sprite.svg#twitter'></use>
+                  </svg>
+                </a>
+              </li>
+  
+              <li class="socials__item">
+                <a href="" target="_blank" class="socials__link">
+                  <svg class='socials__icon' width="15" height="15">
+                    <use xlink:href='img/socials/socials-sprite.svg#instagram'></use>
+                  </svg>
+                </a>
+              </li>
+  
+            </ul>
+  
+            <div class="banner__info">
+              <div class="banner__info-label">3D View</div>
+              <div class="banner__info-line"></div>
+            </div>
+            <div class="banner__warranty">
+              <img class="banner__warranty-image" src="img/warranty.svg" alt="" />
+            </div>
+            <div class="widget" style="text-align: center;">
+              <img src="img/widget.png" alt="" style="max-width: 80vh; width: 100%;" />
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- collect form -->
+      <div class="main__collect collect">
+        <div class="container">
+          <div class="main__section-header">
+            <h2 class="collect__title title">Выбор <span>цвета</span></h2>
+            <p class="collect__subtitle subtitle">Выберите интересущий цвет и вы увидите пример отображения цвета на
+              прототипе выше.</p>
+          </div>
+          <form action="" method="post" class="collect__form collect-form">
+            <div class="collect-form__category">
+              <button type="button" class="collect-form__category-button"> Classic </button>
+              <button type="button" class="collect-form__category-button"> Gloss </button>
+              <button type="button" class="collect-form__category-button"> Natural </button>
+              <button type="button" class="collect-form__category-button active"> Premium <svg
+                  class='collect-form__category-button-icon icon' width="26" height="22">
+                  <use xlink:href='img/RevelFlame-SVG-sprite.svg#crown'></use>
+                </svg>
+              </button>
+              <input type="hidden" name="Категория">
+            </div>
+            <div class="collect-form__list-wrapper">
+              <div class="collect-form__list">
+                <label class="collect-radio">
+                  <input class="collect-radio__input" type="radio" name="color" value="Carbon" checked required>
+                  <div class="collect-radio__name">Carbon</div>
+                  <div class="collect-radio__color">
+                    <img src="img/colors/color_1.jpg" alt="" />
+                  </div>
+                </label>
+                <label class="collect-radio">
+                  <input class="collect-radio__input" type="radio" name="color" value="Wood" required>
+                  <div class="collect-radio__name">Wood</div>
+                  <div class="collect-radio__color">
+                    <img src="img/colors/color_2.jpg" alt="" />
+                  </div>
+                </label>
+                <label class="collect-radio">
+                  <input class="collect-radio__input" type="radio" name="color" value="Steel" required>
+                  <div class="collect-radio__name">Steel</div>
+                  <div class="collect-radio__color">
+                    <img src="img/colors/color_3.jpg" alt="" />
+                  </div>
+                </label>
+                <label class="collect-radio">
+                  <input class="collect-radio__input" type="radio" name="color" value="Granote" required>
+                  <div class="collect-radio__name">Granote</div>
+                  <div class="collect-radio__color">
+                    <img src="img/colors/color_4.jpg" alt="" />
+                  </div>
+                </label>
+                <label class="collect-radio">
+                  <input class="collect-radio__input" type="radio" name="color" value="AGE Dark" required>
+                  <div class="collect-radio__name">AGE Dark</div>
+                  <div class="collect-radio__color">
+                    <img src="img/colors/color_5.jpg" alt="" />
+                  </div>
+                </label>
+                <label class="collect-radio">
+                  <input class="collect-radio__input" type="radio" name="color" value="Glow" required>
+                  <div class="collect-radio__name">Glow</div>
+                  <div class="collect-radio__color">
+                    <img src="img/colors/color_6.jpg" alt="" />
+                  </div>
+                </label>
+              </div>
+            </div>
+            <div class="collect-form__signature signature">
+              <label class="signature-checkbox">
+                <input id="signature-input" type="checkbox" name="Подпись" class="signature-checkbox__input">
+                <div class="signature-checkbox__icon-wrapper">
+                  <svg class="signature-checkbox__icon">
+                    <use xlink:href='img/RevelFlame-SVG-sprite.svg#checked'></use>
+                  </svg>
+                </div>
+                <div class="signature-checkbox__label">
+                  <div class="signature-checkbox__label-top">Подписать огнемет</div>
+                  <div class="signature-checkbox__label-bottom">Цена: 20$</div>
+                </div>
+              </label>
+              <div class="signature__form">
+                <input type="text" name="Подпись name" placeholder="Введите подпись" class="input" autocomplete="off">
+                <button type="button" class="btn btn--blue">Применить</button>
+              </div>
+            </div>
+            <div class="collect-form__result result-form">
+              <div class="main__section-header">
+                <div class="main__section-header-wrapper-title">
+                  <h2 class="title">Детали <span>заказа</span></h2>
+                  <button type="submit" class="result-form__button result-form__button--desctop btn btn--green">
+                    <svg class='btn__icon icon icon--card'>
+                      <use xlink:href='img/RevelFlame-SVG-sprite.svg#shopping-cart'></use>
+                    </svg>
+                    <span>Заказать</span>
+                  </button>
+                </div>
+              </div>
+              <div class="result-form__list">
+                <div class="result-form__col">
+                  <div class="result-form__label">Материал</div>
+                  <div class="result-form__value">Cofet</div>
+                </div>
+                <div class="result-form__col">
+                  <div class="result-form__label">Технология</div>
+                  <div class="result-form__value">FDM</div>
+                </div>
+                <div class="result-form__col">
+                  <div class="result-form__label">Производство</div>
+                  <div class="result-form__value">Печать</div>
+                </div>
+                <div class="result-form__col">
+                  <div class="result-form__label">Вес</div>
+                  <div class="result-form__value">2 кг.</div>
+                </div>
+                <div class="result-form__col">
+                  <div class="result-form__label">Цвет</div>
+                  <div class="result-form__value">Steel</div>
+                </div>
+                <div class="result-form__col">
+                  <div class="result-form__label">Цена</div>
+                  <div class="result-form__value">1,245.00$</div>
+                </div>
+              </div>
+              <button type="submit" class="result-form__button result-form__button--mobile btn btn--green">
+                <svg class='btn__icon icon icon--card'>
+                  <use xlink:href='img/RevelFlame-SVG-sprite.svg#shopping-cart'></use>
+                </svg>
+                <span>Заказать</span>
+              </button>
+            </div>
+          </form>
+        </div>
+      </div>
+      <!-- delivery -->
+      <div class="main__delivery delivery">
+        <div class="container">
+          <div class="main__section-header">
+            <h2 class="title">ДОСТАВКА <span>ПО ВСЕМУ МИРУ</span></h2>
+          </div>
+        </div>
+        <div class="delivery-slider-wrapper">
+          <div class="container">
+            <div class="delivery-slider">
+              <div class="swiper-wrapper">
+                <div class="swiper-slide delivery-slider__slide">
+                  <img src="img/delivery/01.svg" alt="" class="delivery-slider__image" />
+                </div>
+  
+                <div class="swiper-slide delivery-slider__slide">
+                  <img src="img/delivery/02.svg" alt="" class="delivery-slider__image" />
+                </div>
+  
+                <div class="swiper-slide delivery-slider__slide">
+                  <img src="img/delivery/03.svg" alt="" class="delivery-slider__image" />
+                </div>
+  
+                <div class="swiper-slide delivery-slider__slide">
+                  <img src="img/delivery/04.svg" alt="" class="delivery-slider__image" />
+                </div>
+  
+                <div class="swiper-slide delivery-slider__slide">
+                  <img src="img/delivery/05.svg" alt="" class="delivery-slider__image" />
+                </div>
+  
+                <div class="swiper-slide delivery-slider__slide">
+                  <img src="img/delivery/06.svg" alt="" class="delivery-slider__image" />
+                </div>
+  
+                <div class="swiper-slide delivery-slider__slide">
+                  <img src="img/delivery/07.svg" alt="" class="delivery-slider__image" />
+                </div>
+  
+                <div class="swiper-slide delivery-slider__slide">
+                  <img src="img/delivery/08.svg" alt="" class="delivery-slider__image" />
+                </div>
+  
+                <div class="swiper-slide delivery-slider__slide">
+                  <img src="img/delivery/09.svg" alt="" class="delivery-slider__image" />
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- about -->
+      <div id="about" class="main__about about">
+        <div class="container">
+          <div class="about__body row-flex">
+            <div class="about__info col">
+              <h2 class="about__info-title title">О <span>проекте</span></h2>
+              <p class="about__info-text">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
+                dolore magna aliqua. Quis ipsum suspendisse ultrices gravida. Risus commodo viverra maecenas accumsan
+                lacus vel facilisis. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+                incididunt ut labore et dolore magna aliqua.
+              </p>
+            </div>
+            <div class="about__video about-video col">
+              <a href="#" target="_blank" class="about-video__link">
+                <img src="img/youtube-demo-img.png" alt="video" class="about-video__image" />
+                <svg class='about-video__icon icon icon--youtube'>
+                  <use xlink:href='img/RevelFlame-SVG-sprite.svg#youtube'></use>
+                </svg>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+  
+    </div>
+  
+    <!-- footer -->
+    @@include("../blocks/modules/footer/footer.html")
+    <script src="js/main.js"></script>
+    <script src="js/vendor.js"></script>
     </body>
 </html>
+
+<!-- @@include("../blocks/modules/header/header.html") -->

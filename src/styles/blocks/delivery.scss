@@ -1,0 +1,32 @@
+.delivery {
+  &__list-wrapper {
+    background-color: var(--green);
+    padding: 28px 0;
+
+    @include lg-block{
+      padding: 28px 0 13px;
+    }
+  }
+  &__list {
+    // display: grid;
+    // grid-template-columns: repeat(auto-fill, minmax(100px, 1fr));
+    // gap: 26px;
+    justify-content: center;
+  }
+
+  &__list-item {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+    @include size(1.33);
+
+    @include lg-block{
+      @include size(2);
+      margin-bottom: 15px;
+    }
+    @include md-block{
+      @include size(4);
+    }
+  }
+}

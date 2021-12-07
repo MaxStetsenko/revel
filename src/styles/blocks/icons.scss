@@ -1,0 +1,35 @@
+.icon {
+  &--card {
+    fill: #fff;
+    width: 20px;
+    height: 18px;
+  }
+
+  &--delivery {
+    fill: #fff;
+    max-width: 100%;
+  }
+
+  &--youtube {
+    width: 102px;
+    height: 72px;
+  }
+
+  &--thanks {
+    width: 54px;
+    height: 54px;
+    fill: var(--green);
+  }
+
+  &--download {
+    width: 28px;
+    height: 30px;
+    fill: var(--green);
+  }
+
+  &--select {
+    width: 23px;
+    height: 14px;
+    transform: rotate(90deg);
+  }
+}

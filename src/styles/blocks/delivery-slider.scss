@@ -1,0 +1,23 @@
+.delivery-slider {
+  min-width: 0;
+  padding: 30px 0;
+  overflow: hidden;
+
+  &-wrapper {
+    background-color: var(--green);
+  }
+  .swiper-wrapper {
+    display: flex;
+    align-items: center;
+  }
+
+  &__slide {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  &__image-wrapper {
+  }
+  &__image {
+  }
+}

@@ -4,4 +4,31 @@
 @import "vendor/libs";
 @import "base/fonts";
 @import "base/general";
+@import "base/typography";
 @import "../blocks/modules";
+// 
+@import "./blocks/header.scss";
+@import "./blocks/logo.scss";
+@import "./blocks/icons.scss";
+@import "./blocks/buttons.scss";
+@import "./blocks/burger.scss";
+@import "./blocks/socials.scss";
+// 
+@import "./blocks/banner.scss";
+// 
+@import "./blocks/collect.scss";
+@import "./blocks/input.scss";
+// 
+@import "./blocks/delivery.scss";
+@import "./blocks/delivery-slider.scss";
+// 
+@import "./blocks/about.scss";
+// 
+@import "./blocks/checkout.scss";
+@import "./blocks/counter.scss";
+@import "./blocks/select.scss";
+@import "./blocks/breadcrumb.scss";
+// 
+@import "./blocks/thanks.scss";
+// 
+@import "./blocks/footer.scss";

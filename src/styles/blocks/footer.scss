@@ -1,0 +1,163 @@
+.footer {
+  background-color: var(--footer-bg);
+
+  &__body {
+    padding: 36px 0;
+  }
+
+  &__logo {
+    @include size(4);
+
+    @include xl-block{
+      @include size(3);
+    }
+    @include lg-block{
+      @include size(12);
+      margin-bottom: 24px;
+    }
+    @include md-block{
+      text-align: center;
+    }
+  }
+
+  &__nav {
+    @include size(5);
+    display: flex;
+    justify-content: space-between;
+    
+    @include xl-block{
+      @include size(6);
+    }
+
+    @include lg-block{
+      @include size(8);
+    }
+    @include md-block{
+      @include size(12);
+      margin-bottom: 40px;
+      flex-direction: column;
+      text-align: center;
+    }
+  }
+
+  &__nav-list {
+    display: flex;
+    flex-direction: column;
+  }
+
+  &__nav-list--first {
+    padding-right: 15px;
+    @include md-block{
+      padding-right: 0;
+      margin-bottom: 16px;
+    }
+  }
+
+  &__nav-list-item {
+    padding-left: 14px;
+    position: relative;
+    &:before{
+      content:'';
+      position: absolute;
+      left: 0;
+      top: 50%;
+      margin-top: -3px;
+      display: inline-block;
+      width: 5px;
+      height: 5px;
+      background-color: #fff;
+      border-radius: 50%;
+      margin-right: 8px;
+    }
+
+    &:not(:last-child) {
+      margin-bottom: 16px;
+    }
+
+    @include md-block{
+      padding-left: 0;  
+      &:before{
+        display: none;
+      }
+    }
+
+    a {
+      color: var(--gray);
+      transition: color .3s;
+
+      @media (any-hover: hover) {
+        &:hover{
+          color: #fff;
+        }
+      }
+    }
+  }
+
+  &__social {
+    @include size(3);
+    text-align: right;
+
+    @include lg-block{
+      @include size(4);
+    }
+    @include md-block{
+      @include size(12);
+      text-align: center;
+    }
+  }
+
+  &__social-title {
+    margin-bottom: 24px;
+
+    font-size: 28px;
+    font-weight: 700;
+  }
+
+  &__social-list {
+    display: grid;
+    grid-template-columns: repeat(4, 36px);
+    gap: 10px;
+    justify-content: end;
+
+    @include md-block{
+      justify-content: center;
+    }
+  }
+
+  &__social-list-link {
+    display: inline-block;
+    width: 36px;
+    height: 36px;
+
+    border: 1px solid var(--green-h);
+    border-radius: 50%;
+    background-color: #131313;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    transition: border-color .3s;
+
+    @media (any-hover: hover) {
+      &:hover{
+        border-color: var(--green);
+        
+        .footer__social-list-icon {
+          opacity: 1;
+        }
+      }
+    }
+  }
+
+  &__social-list-icon {
+    fill: #fff;
+    opacity: .35;
+    transition: opacity .3s;
+  }
+
+  &__copyright {
+    padding: 22px 0;
+    text-align: center;
+    color: var(--gray);
+  }
+}

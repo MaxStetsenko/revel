@@ -1,0 +1,57 @@
+.main {
+  &__thanks {
+    padding: 80px 0;
+  }
+}
+.thanks {
+  &__body {
+    text-align: center;
+  }
+  &__title {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    margin-bottom: 40px;
+
+    @include md-block{
+      flex-direction: column;
+    }
+
+    @include sm-block{
+      font-size: 30px;
+    }
+
+    @media screen and (max-width: rem(375)) {
+      font-size: 24px;
+    }
+  }
+
+  &__title-icon {
+    margin-right: 24px;
+
+    @include md-block{
+      margin: 0px 0px 20px 0px;
+    }
+  }
+
+  &__subtitle {
+    font-size: 24px;
+    font-weight: 400;
+
+    max-width: 680px;
+    margin: 0 auto 38px auto;
+
+    @include md-block{
+      font-size: 18px;
+    }
+
+    @include sm-block{
+      font-size: 14px;
+    }
+  }
+
+  &__socials {
+    justify-content: center;
+  }
+}
