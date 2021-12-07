@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="64.187" height="28" viewBox="0 0 64.187 28">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: #f9f9fa;
+        fill-rule: evenodd;
+      }
+    </style>
+  </defs>
+  <path id="ETH" class="cls-1" d="M764.079,1726.95v-5.2h-10.6v-5.96h11.6v-5.28h-17.12v28h17.32v-5.28h-11.8v-6.28h10.6Zm3-11.16h7.52v22.72h5.52v-22.72h7.56v-5.28h-20.6v5.28Zm29.2,5.84v-11.12h-5.52v28h5.52v-11.6h10.4v11.6h5.48v-28h-5.48v11.12h-10.4Z" transform="translate(-747.969 -1710.5)"/>
+</svg>
