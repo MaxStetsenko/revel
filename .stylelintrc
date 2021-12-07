@@ -126,6 +126,17 @@
                     ],
                 }
             ]],
+        "color-hex-case": ["lower", {
+            "severity": "warning",
+            "message": "HEX-цвета нужно указывать строчными буквами"
+        }],
+        "color-named": ["never", {
+            "message": "Цвета ключевыми словами нельзя писать"
+        }],
+        "color-no-invalid-hex": [true, {
+            "message": "Ошибка в написании HEX-цвета"
+        }],
+
         "no-duplicate-at-import-rules": [true, {
             "message": "Не должно быть повторного импорта файла"
         }],
