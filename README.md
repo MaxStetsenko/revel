@@ -1,8 +1,8 @@
 # gulp-scss-starter
 
-[DEMO-LINK - Page home]('https://maxstetsenko.github.io/revel/dist/index.html');
-[DEMO-LINK - Page checkout]('https://maxstetsenko.github.io/revel/dist/checkout.html');
-[DEMO-LINK - Page thanks]('https://maxstetsenko.github.io/revel/dist/thanks.html');
+[DEMO-LINK - Page home](https://maxstetsenko.github.io/revel/dist/index.html);
+[DEMO-LINK - Page checkout](https://maxstetsenko.github.io/revel/dist/checkout.html);
+[DEMO-LINK - Page thanks](https://maxstetsenko.github.io/revel/dist/thanks.html);
 
 ![GitHub release](https://img.shields.io/github/release/andreyalexeich/gulp-scss-starter.svg)
 [![dependencies Status](https://david-dm.org/andreyalexeich/gulp-scss-starter/status.svg)](https://david-dm.org/andreyalexeich/gulp-scss-starter)
